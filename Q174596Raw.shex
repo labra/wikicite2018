@@ -1,0 +1,382 @@
+ prefix schema: <http://schema.org/>
+ prefix psv: <http://www.wikidata.org/prop/statement/value/>
+ prefix wdp: <http://www.wikidata.org/prop/>
+ prefix sx: <http://weso.es/ns/shex/>
+ prefix pq: <http://www.wikidata.org/prop/qualifier/>
+ prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/>
+ prefix prv: <http://www.wikidata.org/prop/reference/value/>
+ prefix psvn: <http://www.wikidata.org/prop/statement/value-normalized/>
+ prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/>
+ prefix wdt: <http://www.wikidata.org/prop/direct/>
+ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+ prefix pr: <http://www.wikidata.org/prop/reference/>
+ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ prefix wikibase: <http://wikiba.se/ontology#>
+ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ prefix ps: <http://www.wikidata.org/prop/statement/>
+ prefix skos: <http://www.w3.org/2004/02/skos/core#>
+ prefix prov: <http://www.w3.org/ns/prov#>
+ <http://example.org/P910Prop> {
+ ps:P910  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P577Prop> {
+ prov:wasDerivedFrom @<http://example.org/P577PropRef>; 
+ ps:P577  xsd:dateTime; 
+ psv:P577  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P214PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P1256Prop> {
+ ps:P1256  xsd:string; 
+ psvn:P1256  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P407Prop> {
+ prov:wasDerivedFrom @<http://example.org/P407PropRef>; 
+ ps:P407  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1036Prop> {
+ prov:wasDerivedFrom @<http://example.org/P1036PropRef>; 
+ ps:P1036  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/Shape> {
+ rdfs:label  rdf:langString* // sx:maxNumber 74; 
+ schema:dateModified  xsd:dateTime; 
+ schema:description  rdf:langString* // sx:maxNumber 15; 
+ schema:version  xsd:integer; 
+ skos:altLabel  rdf:langString* // sx:maxNumber 36; 
+ wdp:P1036 @<http://example.org/P1036Prop>; 
+ wdp:P110 @<http://example.org/P110Prop>; 
+ wdp:P1256 @<http://example.org/P1256Prop>; 
+ wdp:P1274 @<http://example.org/P1274Prop>; 
+ wdp:P136 @<http://example.org/P136Prop>* // sx:maxNumber 3; 
+ wdp:P138 @<http://example.org/P138Prop>; 
+ wdp:P1417 @<http://example.org/P1417Prop>; 
+ wdp:P1476 @<http://example.org/P1476Prop>; 
+ wdp:P1680 @<http://example.org/P1680Prop>; 
+ wdp:P18 @<http://example.org/P18Prop>; 
+ wdp:P1922 @<http://example.org/P1922Prop>; 
+ wdp:P2034 @<http://example.org/P2034Prop>; 
+ wdp:P214 @<http://example.org/P214Prop>; 
+ wdp:P227 @<http://example.org/P227Prop>; 
+ wdp:P2438 @<http://example.org/P2438Prop>; 
+ wdp:P244 @<http://example.org/P244Prop>; 
+ wdp:P268 @<http://example.org/P268Prop>; 
+ wdp:P269 @<http://example.org/P269Prop>; 
+ wdp:P31 @<http://example.org/P31Prop>; 
+ wdp:P3219 @<http://example.org/P3219Prop>; 
+ wdp:P3417 @<http://example.org/P3417Prop>; 
+ wdp:P373 @<http://example.org/P373Prop>; 
+ wdp:P3959 @<http://example.org/P3959Prop>* // sx:maxNumber 2; 
+ wdp:P407 @<http://example.org/P407Prop>; 
+ wdp:P4272 @<http://example.org/P4272Prop>; 
+ wdp:P435 @<http://example.org/P435Prop>* // sx:maxNumber 2; 
+ wdp:P4431 @<http://example.org/P4431Prop>; 
+ wdp:P495 @<http://example.org/P495Prop>; 
+ wdp:P4969 @<http://example.org/P4969Prop>* // sx:maxNumber 4; 
+ wdp:P50 @<http://example.org/P50Prop>; 
+ wdp:P571 @<http://example.org/P571Prop>; 
+ wdp:P577 @<http://example.org/P577Prop>; 
+ wdp:P646 @<http://example.org/P646Prop>; 
+ wdp:P674 @<http://example.org/P674Prop>* // sx:maxNumber 5; 
+ wdp:P747 @<http://example.org/P747Prop>* // sx:maxNumber 2; 
+ wdp:P910 @<http://example.org/P910Prop>; 
+ wdp:P921 @<http://example.org/P921Prop>; 
+ wdp:P935 @<http://example.org/P935Prop>; 
+ wdp:P941 @<http://example.org/P941Prop>; 
+ wdt:P1036  xsd:string // rdfs:label "Dewey Decimal Classification"@en; 
+ wdt:P110  IRI  // rdfs:label "illustrator"@en; 
+ wdt:P1256  xsd:string // rdfs:label "Iconclass notation"@en; 
+ wdt:P1274  xsd:string // rdfs:label "ISFDB title ID"@en; 
+ wdt:P136  IRI *  // rdfs:label "genre"@en  // sx:maxNumber 3; 
+ wdt:P138  IRI  // rdfs:label "named after"@en; 
+ wdt:P1417  xsd:string // rdfs:label "Encyclopædia Britannica Online ID"@en; 
+ wdt:P1476  [ @en]  // rdfs:label "title"@en; 
+ wdt:P1680  [ @en]  // rdfs:label "subtitle"@en; 
+ wdt:P18  IRI  // rdfs:label "image"@en; 
+ wdt:P1922  [ @en]  // rdfs:label "first line"@en; 
+ wdt:P2034  xsd:string // rdfs:label "Project Gutenberg ebook ID"@en; 
+ wdt:P214  xsd:string // rdfs:label "VIAF ID"@en; 
+ wdt:P227  xsd:string // rdfs:label "GND ID"@en; 
+ wdt:P2438  IRI  // rdfs:label "narrator"@en; 
+ wdt:P244  xsd:string // rdfs:label "Library of Congress authority ID"@en; 
+ wdt:P268  xsd:string // rdfs:label "BnF ID"@en; 
+ wdt:P269  xsd:string // rdfs:label "SUDOC authorities ID"@en; 
+ wdt:P31  IRI  // rdfs:label "instance of"@en; 
+ wdt:P3219  xsd:string // rdfs:label "Encyclopædia Universalis ID"@en; 
+ wdt:P3417  xsd:string // rdfs:label "Quora topic ID"@en; 
+ wdt:P373  xsd:string // rdfs:label "Commons category"@en; 
+ wdt:P3959  xsd:string*  // rdfs:label "NNL work ID"@en  // sx:maxNumber 2; 
+ wdt:P407  IRI  // rdfs:label "language of work or name"@en; 
+ wdt:P4272  xsd:string // rdfs:label "DPLA subject ID"@en; 
+ wdt:P435  xsd:string*  // rdfs:label "MusicBrainz work ID"@en  // sx:maxNumber 2; 
+ wdt:P4431  xsd:string // rdfs:label "Google Doodle"@en; 
+ wdt:P495  IRI  // rdfs:label "country of origin"@en; 
+ wdt:P4969  IRI *  // rdfs:label "derivative work"@en  // sx:maxNumber 4; 
+ wdt:P50  IRI  // rdfs:label "author"@en; 
+ wdt:P571  xsd:dateTime // rdfs:label "inception"@en; 
+ wdt:P577  xsd:dateTime // rdfs:label "publication date"@en; 
+ wdt:P646  xsd:string // rdfs:label "Freebase ID"@en; 
+ wdt:P674  IRI *  // rdfs:label "characters"@en  // sx:maxNumber 5; 
+ wdt:P747  IRI *  // rdfs:label "has edition"@en  // sx:maxNumber 2; 
+ wdt:P910  IRI  // rdfs:label "topic's main category"@en; 
+ wdt:P935  xsd:string // rdfs:label "Commons gallery"@en; 
+ wdt:P941  IRI  // rdfs:label "inspired by"@en; 
+ wdtn:P1256  IRI ; 
+ wdtn:P2034  IRI ; 
+ wdtn:P214  IRI ; 
+ wdtn:P227  IRI ; 
+ wdtn:P244  IRI ; 
+ wdtn:P268  IRI ; 
+ wdtn:P269  IRI ; 
+ wdtn:P435  IRI * // sx:maxNumber 2; 
+ wdtn:P646  IRI ; 
+ wikibase:identifiers  xsd:integer; 
+ wikibase:sitelinks  xsd:integer; 
+ wikibase:statements  xsd:integer; 
+ wikibase:timestamp  xsd:dateTime
+ }
+ <http://example.org/P3417Prop> {
+ ps:P3417  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P4969PropRef> {
+ pr:P3452  IRI 
+ }
+ <http://example.org/P577PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P2034Prop> {
+ ps:P2034  xsd:string; 
+ psvn:P2034  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P269PropRef> {
+ pr:P214  xsd:string; 
+ pr:P248  IRI ; 
+ pr:P813  xsd:dateTime; 
+ prn:P214  IRI ; 
+ prv:P813  IRI 
+ }
+ <http://example.org/P747Prop> {
+ prov:wasDerivedFrom @<http://example.org/P747PropRef>; 
+ ps:P747  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P435Prop> {
+ prov:wasDerivedFrom  .; 
+ ps:P435  xsd:string; 
+ psvn:P435  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1274Prop> {
+ ps:P1274  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P110Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P110  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1922Prop> {
+ prov:wasDerivedFrom @<http://example.org/P1922PropRef>; 
+ ps:P1922  [ @en] ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P268Prop> {
+ ps:P268  xsd:string; 
+ psvn:P268  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P4969Prop> {
+ prov:wasDerivedFrom @<http://example.org/P4969PropRef>; 
+ ps:P4969  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1476Prop> {
+ ps:P1476  [ @en] ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P244Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P244  xsd:string; 
+ psvn:P244  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1417Prop> {
+ ps:P1417  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P2438Prop> {
+ ps:P2438  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P373Prop> {
+ ps:P373  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P3219Prop> {
+ ps:P3219  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P3959Prop> {
+ ps:P3959  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P646Prop> {
+ prov:wasDerivedFrom @<http://example.org/P646PropRef>; 
+ ps:P646  xsd:string; 
+ psvn:P646  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P50PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P1680Prop> {
+ ps:P1680  [ @en] ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P136Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P136  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P495Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P495  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P50Prop> {
+ prov:wasDerivedFrom @<http://example.org/P50PropRef>* // sx:maxNumber 5; 
+ ps:P50  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P747PropRef> {
+ pr:P3452  IRI 
+ }
+ <http://example.org/P1036PropRef> {
+ pr:P854  IRI 
+ }
+ <http://example.org/P4431Prop> {
+ ps:P4431  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P18Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P18  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P646PropRef> {
+ pr:P248  IRI ; 
+ pr:P577  xsd:dateTime; 
+ prv:P577  IRI 
+ }
+ <http://example.org/P571PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P941Prop> {
+ pq:P642  IRI ; 
+ pq:P828  IRI ; 
+ ps:P941  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P435PropRef> {
+ pr:P248  IRI 
+ }
+ <http://example.org/P4272Prop> {
+ ps:P4272  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P407PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P214Prop> {
+ prov:wasDerivedFrom @<http://example.org/P214PropRef>; 
+ ps:P214  xsd:string; 
+ psvn:P214  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P935Prop> {
+ ps:P935  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P31Prop> {
+ ps:P31  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P138Prop> {
+ ps:P138  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1922PropRef> {
+ pr:P854  IRI 
+ }
+ <http://example.org/P921Prop> {
+ ps:P921  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P269Prop> {
+ prov:wasDerivedFrom @<http://example.org/P269PropRef>; 
+ ps:P269  xsd:string; 
+ psvn:P269  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P571Prop> {
+ prov:wasDerivedFrom @<http://example.org/P571PropRef>; 
+ ps:P571  xsd:dateTime; 
+ psv:P571  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P227Prop> {
+ prov:wasDerivedFrom  IRI ; 
+ ps:P227  xsd:string; 
+ psvn:P227  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P674Prop> {
+ ps:P674  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
