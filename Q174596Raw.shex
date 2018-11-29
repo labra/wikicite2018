@@ -16,45 +16,51 @@
  prefix ps: <http://www.wikidata.org/prop/statement/>
  prefix skos: <http://www.w3.org/2004/02/skos/core#>
  prefix prov: <http://www.w3.org/ns/prov#>
- <http://example.org/P910Prop> {
- ps:P910  IRI ; 
- rdf:type  IRI ; 
- wikibase:rank  IRI 
- }
- <http://example.org/P577Prop> {
- prov:wasDerivedFrom @<http://example.org/P577PropRef>; 
- ps:P577  xsd:dateTime; 
- psv:P577  IRI ; 
- rdf:type  IRI ; 
- wikibase:rank  IRI 
- }
- <http://example.org/P214PropRef> {
- pr:P143  IRI 
- }
- <http://example.org/P1256Prop> {
- ps:P1256  xsd:string; 
- psvn:P1256  IRI ; 
- rdf:type  IRI ; 
- wikibase:rank  IRI 
- }
- <http://example.org/P407Prop> {
- prov:wasDerivedFrom @<http://example.org/P407PropRef>; 
- ps:P407  IRI ; 
- rdf:type  IRI ; 
- wikibase:rank  IRI 
- }
- <http://example.org/P1036Prop> {
- prov:wasDerivedFrom @<http://example.org/P1036PropRef>; 
- ps:P1036  xsd:string; 
- rdf:type  IRI ; 
- wikibase:rank  IRI 
- }
+
  <http://example.org/Shape> {
  rdfs:label  rdf:langString* // sx:maxNumber 74; 
  schema:dateModified  xsd:dateTime; 
  schema:description  rdf:langString* // sx:maxNumber 15; 
  schema:version  xsd:integer; 
  skos:altLabel  rdf:langString* // sx:maxNumber 36; 
+ wdt:P1036  xsd:string // rdfs:label "Dewey Decimal Classification"@en; 
+ wdt:P110  IRI  // rdfs:label "illustrator"@en; 
+ wdt:P1256  xsd:string // rdfs:label "Iconclass notation"@en; 
+ wdt:P1274  xsd:string // rdfs:label "ISFDB title ID"@en; 
+ wdt:P136  IRI *  // rdfs:label "genre"@en  // sx:maxNumber 3; 
+ wdt:P138  IRI  // rdfs:label "named after"@en; 
+ wdt:P1417  xsd:string // rdfs:label "Encyclopædia Britannica Online ID"@en; 
+ wdt:P1476  [ @en]  // rdfs:label "title"@en; 
+ wdt:P1680  [ @en]  // rdfs:label "subtitle"@en; 
+ wdt:P18  IRI  // rdfs:label "image"@en; 
+ wdt:P1922  [ @en]  // rdfs:label "first line"@en; 
+ wdt:P2034  xsd:string // rdfs:label "Project Gutenberg ebook ID"@en; 
+ wdt:P214  xsd:string // rdfs:label "VIAF ID"@en; 
+ wdt:P227  xsd:string // rdfs:label "GND ID"@en; 
+ wdt:P2438  IRI  // rdfs:label "narrator"@en; 
+ wdt:P244  xsd:string // rdfs:label "Library of Congress authority ID"@en; 
+ wdt:P268  xsd:string // rdfs:label "BnF ID"@en; 
+ wdt:P269  xsd:string // rdfs:label "SUDOC authorities ID"@en; 
+ wdt:P31  IRI  // rdfs:label "instance of"@en; 
+ wdt:P3219  xsd:string // rdfs:label "Encyclopædia Universalis ID"@en; 
+ wdt:P3417  xsd:string // rdfs:label "Quora topic ID"@en; 
+ wdt:P373  xsd:string // rdfs:label "Commons category"@en; 
+ wdt:P3959  xsd:string*  // rdfs:label "NNL work ID"@en  // sx:maxNumber 2; 
+ wdt:P407  IRI  // rdfs:label "language of work or name"@en; 
+ wdt:P4272  xsd:string // rdfs:label "DPLA subject ID"@en; 
+ wdt:P435  xsd:string*  // rdfs:label "MusicBrainz work ID"@en  // sx:maxNumber 2; 
+ wdt:P4431  xsd:string // rdfs:label "Google Doodle"@en; 
+ wdt:P495  IRI  // rdfs:label "country of origin"@en; 
+ wdt:P4969  IRI *  // rdfs:label "derivative work"@en  // sx:maxNumber 4; 
+ wdt:P50  IRI  // rdfs:label "author"@en; 
+ wdt:P571  xsd:dateTime // rdfs:label "inception"@en; 
+ wdt:P577  xsd:dateTime // rdfs:label "publication date"@en; 
+ wdt:P646  xsd:string // rdfs:label "Freebase ID"@en; 
+ wdt:P674  IRI *  // rdfs:label "characters"@en  // sx:maxNumber 5; 
+ wdt:P747  IRI *  // rdfs:label "has edition"@en  // sx:maxNumber 2; 
+ wdt:P910  IRI  // rdfs:label "topic's main category"@en; 
+ wdt:P935  xsd:string // rdfs:label "Commons gallery"@en; 
+ wdt:P941  IRI  // rdfs:label "inspired by"@en; 
  wdp:P1036 @<http://example.org/P1036Prop>; 
  wdp:P110 @<http://example.org/P110Prop>; 
  wdp:P1256 @<http://example.org/P1256Prop>; 
@@ -94,44 +100,6 @@
  wdp:P921 @<http://example.org/P921Prop>; 
  wdp:P935 @<http://example.org/P935Prop>; 
  wdp:P941 @<http://example.org/P941Prop>; 
- wdt:P1036  xsd:string // rdfs:label "Dewey Decimal Classification"@en; 
- wdt:P110  IRI  // rdfs:label "illustrator"@en; 
- wdt:P1256  xsd:string // rdfs:label "Iconclass notation"@en; 
- wdt:P1274  xsd:string // rdfs:label "ISFDB title ID"@en; 
- wdt:P136  IRI *  // rdfs:label "genre"@en  // sx:maxNumber 3; 
- wdt:P138  IRI  // rdfs:label "named after"@en; 
- wdt:P1417  xsd:string // rdfs:label "Encyclopædia Britannica Online ID"@en; 
- wdt:P1476  [ @en]  // rdfs:label "title"@en; 
- wdt:P1680  [ @en]  // rdfs:label "subtitle"@en; 
- wdt:P18  IRI  // rdfs:label "image"@en; 
- wdt:P1922  [ @en]  // rdfs:label "first line"@en; 
- wdt:P2034  xsd:string // rdfs:label "Project Gutenberg ebook ID"@en; 
- wdt:P214  xsd:string // rdfs:label "VIAF ID"@en; 
- wdt:P227  xsd:string // rdfs:label "GND ID"@en; 
- wdt:P2438  IRI  // rdfs:label "narrator"@en; 
- wdt:P244  xsd:string // rdfs:label "Library of Congress authority ID"@en; 
- wdt:P268  xsd:string // rdfs:label "BnF ID"@en; 
- wdt:P269  xsd:string // rdfs:label "SUDOC authorities ID"@en; 
- wdt:P31  IRI  // rdfs:label "instance of"@en; 
- wdt:P3219  xsd:string // rdfs:label "Encyclopædia Universalis ID"@en; 
- wdt:P3417  xsd:string // rdfs:label "Quora topic ID"@en; 
- wdt:P373  xsd:string // rdfs:label "Commons category"@en; 
- wdt:P3959  xsd:string*  // rdfs:label "NNL work ID"@en  // sx:maxNumber 2; 
- wdt:P407  IRI  // rdfs:label "language of work or name"@en; 
- wdt:P4272  xsd:string // rdfs:label "DPLA subject ID"@en; 
- wdt:P435  xsd:string*  // rdfs:label "MusicBrainz work ID"@en  // sx:maxNumber 2; 
- wdt:P4431  xsd:string // rdfs:label "Google Doodle"@en; 
- wdt:P495  IRI  // rdfs:label "country of origin"@en; 
- wdt:P4969  IRI *  // rdfs:label "derivative work"@en  // sx:maxNumber 4; 
- wdt:P50  IRI  // rdfs:label "author"@en; 
- wdt:P571  xsd:dateTime // rdfs:label "inception"@en; 
- wdt:P577  xsd:dateTime // rdfs:label "publication date"@en; 
- wdt:P646  xsd:string // rdfs:label "Freebase ID"@en; 
- wdt:P674  IRI *  // rdfs:label "characters"@en  // sx:maxNumber 5; 
- wdt:P747  IRI *  // rdfs:label "has edition"@en  // sx:maxNumber 2; 
- wdt:P910  IRI  // rdfs:label "topic's main category"@en; 
- wdt:P935  xsd:string // rdfs:label "Commons gallery"@en; 
- wdt:P941  IRI  // rdfs:label "inspired by"@en; 
  wdtn:P1256  IRI ; 
  wdtn:P2034  IRI ; 
  wdtn:P214  IRI ; 
@@ -145,6 +113,41 @@
  wikibase:sitelinks  xsd:integer; 
  wikibase:statements  xsd:integer; 
  wikibase:timestamp  xsd:dateTime
+ }
+
+
+ <http://example.org/P910Prop> {
+ ps:P910  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P577Prop> {
+ prov:wasDerivedFrom @<http://example.org/P577PropRef>; 
+ ps:P577  xsd:dateTime; 
+ psv:P577  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P214PropRef> {
+ pr:P143  IRI 
+ }
+ <http://example.org/P1256Prop> {
+ ps:P1256  xsd:string; 
+ psvn:P1256  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P407Prop> {
+ prov:wasDerivedFrom @<http://example.org/P407PropRef>; 
+ ps:P407  IRI ; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
+ }
+ <http://example.org/P1036Prop> {
+ prov:wasDerivedFrom @<http://example.org/P1036PropRef>; 
+ ps:P1036  xsd:string; 
+ rdf:type  IRI ; 
+ wikibase:rank  IRI 
  }
  <http://example.org/P3417Prop> {
  ps:P3417  xsd:string; 
